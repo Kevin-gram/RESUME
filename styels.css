@@ -407,7 +407,7 @@ text-align: center;
   box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 .hide{
-  display:block;
+  display:none;
 }
 
 #main1{
