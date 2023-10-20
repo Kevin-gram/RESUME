@@ -308,7 +308,10 @@ justify-content: space-around;
 }
 .word3{
   display:none;
-}
+}  
+ /*
+   large size screen
+*/ 
 @media (max-width: 918px) {
   .main{
     display: flex;
@@ -332,7 +335,9 @@ justify-content: space-around;
     display: none;
   }
   }
-  
+  /*
+   medium size screen
+*/
 @media (max-width:795px) {
   #main1{
     display: flex;
@@ -373,7 +378,7 @@ justify-content: space-around;
     display: flex;
 flex-direction: column;
 justify-content: center;
-text-align: center; /* Add this line */
+text-align: center; 
 
   }
   .html, .css, .javascript, .python, .c, .canva {
@@ -393,6 +398,9 @@ text-align: center; /* Add this line */
 }
 
 }
+ /*
+   small size screen
+*/
 @media (max-width: 421px) {
 .img2{
   width: 480px;
