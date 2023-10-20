@@ -1,3 +1,6 @@
+html {
+  scroll-behavior: smooth;
+}
 * {
     margin: 0;
     padding: 0;
@@ -118,6 +121,7 @@ span{
   width: 50%;
   height: auto;
   display: block;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
 }
 #main1{
   display: flex;
@@ -142,6 +146,9 @@ span{
     .html, .css, .javascript, .python, .c, .canva {
       width: 70vw;
       height: 20px;
+  }
+  .show{
+    display: none;
   }
   .languages {
     display: flex;
@@ -240,11 +247,14 @@ span{
 }
 
 .education-item {
+
   margin: 10px 0;
   border-left: 4px solid #0073e6; 
   padding-left: 10px;
 }
-
+.hide{
+  display:none;
+}
 .education-year {
   font-weight: bold;
   font-size: 18px;
@@ -315,6 +325,11 @@ justify-content: space-around;
   .img2{
     width: 100%;
     height: auto;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
+  }
+  .show
+  {
+    display: none;
   }
   }
   
@@ -343,6 +358,7 @@ justify-content: space-around;
   .img2{
     padding-left: 10rem;
     width: 800px;
+    box-shadow: 5px 5px 10px rgb(0, 0, 0);
   } 
   .word2{
     padding-left: 10rem;
@@ -368,11 +384,22 @@ text-align: center; /* Add this line */
   text-align: center;
   font-size: 16px;
 }
+.menu-icon {
+  display: block;
+  height: 5px;
+  width: 5rem;
+  padding-top: 2rem;
+  padding: 2rem;
+}
 
 }
 @media (max-width: 421px) {
 .img2{
   width: 480px;
+  box-shadow: 5px 5px 10px rgb(0, 0, 0);
+}
+.hide{
+  display:block;
 }
 
 #main1{
@@ -388,8 +415,8 @@ text-align: center; /* Add this line */
   .navright{
     display: none;
   }
-  .menu{
-    display: menu;
+  .menu-icon{
+    display: block;
     width: fit-content;
     padding: 2rem;
   }
@@ -438,7 +465,7 @@ text-align: center;
     font-size: 20px;
     font-weight: 300;
   }
-.custom-button{
+.custom-button .menu-icon{
   padding: 5px 10px;
   font-size: 12px;
   cursor: pointer;
@@ -447,6 +474,7 @@ text-align: center;
   font-size: large;
 }
 .menu-icon{
+  display: block;
   height: 5px;
   width: 5rem;
   padding-top: 2rem;

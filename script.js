@@ -4,7 +4,25 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // Add a click event listener to the menu icon
     menuIcon.addEventListener("click", function () {
-        // Toggle the "show" class on the menu list to display or hide it
-        menuList.classList.toggle("show");
+        // Hide the menu icon
+        menuIcon.classList.add("hide");
+        // Show the menu list
+        menuList.classList.add("show");
+    });
+
+    // Add a click event listener to the menu list
+    menuList.addEventListener("click", function () {
+        // Hide the menu list
+        menuList.classList.remove("show");
+        // Show the menu icon
+        menuIcon.classList.remove("hide");
+    });
+
+    // Add a scroll event listener to hide the menu list and show the menu icon
+    window.addEventListener("scroll", function () {
+        // Hide the menu list
+        menuList.classList.remove("show");
+        // Show the menu icon
+        menuIcon.classList.remove("hide");
     });
 });
